@@ -20,13 +20,24 @@ class Drawer():
         image = Image(image, rect)
         self.items.append(image)
 
-    def add_image(self, name):
+    def add_image(self, name, transparent=False):
         """ Add a new image to the items list """
-        data = self.load_image(name)
+        data = self.load_image(name, transparent)
         rect = data.get_rect()
         image = Image(data, rect)
 
         self.items.append(image)
+        return image
+
+    def add_image(self, name, x, y, width=0, height=0, transparent=False):
+        data = self.load_image(name, transparent)
+        if not width == 0 and not height == 0:
+            data = py.transform.scale(data, (width, height))
+        rect = [x, y, width, height]
+        image = Image(data, rect)
+
+        self.items.append(image)
+        return image
 
     def add_background_image(self, name):
         data = self.load_image(name)
@@ -52,13 +63,17 @@ class Drawer():
         for item in self.game_object_items:
             self.screen.blit(item.data, item.rect)
 
-    def load_image(self, file):
+    @staticmethod
+    def load_image(file, transparent=False):
         """ loads an image, prepares it for play """
         try:
             surface = py.image.load(file)
         except py.error:
             raise SystemExit('Could not load image "%s" %s' % (file, py.get_error()))
-        return surface.convert()
+        if transparent:
+            return surface.convert_alpha()
+        else:
+            return surface.convert()
 
     def clear(self):
         self.items = []

@@ -22,7 +22,7 @@ class Button:
             return self.default
 
     def render_text(self):
-        font = py.font.Font("resources/fonts/Fira.ttf", self.font_size)
+        font = py.font.Font("resources/fonts/helsinki.ttf", self.font_size)
         if self.is_hovering:
             return font.render(self.text, True, self.font_color_hover)
         else:

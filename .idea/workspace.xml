@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51ef1a46-8280-4351-988b-4973faa53cf8" name="Default Changelist" comment="" />
+    <list default="true" id="51ef1a46-8280-4351-988b-4973faa53cf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/fonts/helsinki.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/KVK_Formulier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/Kliknieuws_Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/Startscherm_Background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/Character_Customisation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_character/Female_Black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_character/Female_Brown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_character/Female_Pale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_character/Female_White.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_clothes/Female_Clothes_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_clothes/Female_Clothes_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_clothes/Female_Clothes_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_clothes/Female_Clothes_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_hairstyles/Female_Haircut_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_hairstyles/Female_Haircut_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_hairstyles/Female_Haircut_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/graphics/char/female_hairstyles/Female_Haircut_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game_screens/start_screen/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game_screens/start_screen/start_screen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helper/text_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SeriousGaming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SeriousGaming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fonts/Chunk.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/fonts/Fira.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/graphics/main_menu_background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global_screens/main_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/global_screens/main_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/button.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/drawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/drawer.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,22 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#48#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="470">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding>
                 <element signature="e#20#48#0" expanded="true" />
               </folding>
@@ -35,33 +55,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game_screens/home_screen/screen.py">
+        <entry file="file://$PROJECT_DIR$/src/helper/button.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="470">
+              <caret line="47" column="57" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game_screens/start_screen/start_screen.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="102" column="33" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helper/button.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/helper/text_input.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/helper/image_button.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="1921">
+              <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#163#177#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,11 +104,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/global_screens/options.py" />
         <option value="$PROJECT_DIR$/src/helper/image_button.py" />
+        <option value="$PROJECT_DIR$/src/home_screen/screen.py" />
+        <option value="$PROJECT_DIR$/src/game_screens/home_screen/screen.py" />
+        <option value="$PROJECT_DIR$/src/game.py" />
+        <option value="$PROJECT_DIR$/src/helper/drawer.py" />
+        <option value="$PROJECT_DIR$/src/game_config.py" />
+        <option value="$PROJECT_DIR$/src/helper/text_input.py" />
         <option value="$PROJECT_DIR$/src/helper/button.py" />
         <option value="$PROJECT_DIR$/src/global_screens/main_menu.py" />
-        <option value="$PROJECT_DIR$/src/home_screen/screen.py" />
-        <option value="$PROJECT_DIR$/src/game_config.py" />
-        <option value="$PROJECT_DIR$/src/game_screens/home_screen/screen.py" />
+        <option value="$PROJECT_DIR$/src/game_screens/start_screen/start_screen.py" />
       </list>
     </option>
   </component>
@@ -104,35 +128,79 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game_screens" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game_screens" type="462c0819:PsiDirectoryNode" />
+              <item name="home_screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game_screens" type="462c0819:PsiDirectoryNode" />
+              <item name="news_screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game_screens" type="462c0819:PsiDirectoryNode" />
+              <item name="start_screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="global_screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Keuzevak-SeriousGaming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Keuzevak-SeriousGaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,6 +209,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\Coding\Hogeschool Rotterdam\Keuzevak-SeriousGaming\resources\graphics" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dariu\PycharmProjects\SeriousGaming\src\game_screens" />
     </key>
@@ -165,7 +236,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\dariu\PycharmProjects\SeriousGaming\env\Scripts\python.exe" />
+      <option name="SDK_HOME" value="Z:\Coding\Hogeschool Rotterdam\Keuzevak-SeriousGaming\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -196,19 +267,19 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30985916" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.30985916" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.30985916" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3298731" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -220,66 +291,124 @@
     <entry file="file://$PROJECT_DIR$/src/helper/game_object_group.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_config.py">
+    <entry file="file://$PROJECT_DIR$/src/helper/image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#48#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/button.py">
+    <entry file="file://$PROJECT_DIR$/src/game_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/image_button.py">
+    <entry file="file://$PROJECT_DIR$/src/helper/screen_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game_screens/home_screen/screen.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/global_screens/main_menu.py">
+    <entry file="file://$PROJECT_DIR$/resources/graphics/KVK_Formulier.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/drawer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="349">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/image_button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/global_screens/main_menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-577219510/pygame/surface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="470">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="e#20#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="47" column="57" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="47" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_screens/start_screen/start_screen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="102" column="33" lean-forward="true" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/text_input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+          <folding>
+            <element signature="e#163#177#0" expanded="true" />
           </folding>
         </state>
       </provider>

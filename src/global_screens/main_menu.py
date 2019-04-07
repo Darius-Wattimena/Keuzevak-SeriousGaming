@@ -1,6 +1,5 @@
 from src.helper.button import Button
 from src.helper.screen_base import ScreenBase
-from src.helper.label import Label
 import pygame as py
 
 
@@ -9,13 +8,16 @@ class MainMenu(ScreenBase):
         self.game = game
         self.game.set_screen(self)
         self.mouse_position = None
-        game.drawer.add_background_image("resources/graphics/main_menu_background.jpg")
-        self.title = Label(game.py_screen, self.game.config.title, [0, 0, 0], 75, "resources/fonts/Fira.ttf")
+        game.drawer.add_background_image("resources/graphics/StartScherm_Background.png")
+
+        self.logo_x = self.game.screen_center_width - (325 / 2)
+        self.logo = game.drawer.add_image("resources/graphics/Kliknieuws_Logo.png", self.logo_x, 80, 325, 199)
         self.btn = []
         btn_base_color = [50, 50, 50]
-        self.btn.append(MainMenuButton(game.py_screen, "Nieuw spel", [10, 200, 0], [10, 200, 0], [255, 255, 255], [200, 200, 200]))
+        self.btn.append(MainMenuButton(game.py_screen, "Nieuw spel", [29, 226, 72], [29, 226, 72], [255, 255, 255], [200, 200, 200]))
         self.btn.append(MainMenuButton(game.py_screen, "Laad spel", btn_base_color, btn_base_color, [255, 255, 255], [200, 200, 200]))
         self.btn.append(MainMenuButton(game.py_screen, "Stoppen", btn_base_color, btn_base_color, [255, 255, 255], [200, 200, 200]))
+        self.button_x = self.game.screen_center_width - (self.btn[0].width / 2)
 
     def handle_mouse_position(self, mouse_position):
         self.mouse_position = mouse_position
@@ -25,14 +27,10 @@ class MainMenu(ScreenBase):
 
     def on_render(self):
         self.game.drawer.draw_canvas()
-        screen_center_width = self.game.py_screen.get_width() / 2
-        title_x = screen_center_width - (self.title.get_width() / 2)
-        button_x = screen_center_width - (self.btn[0].width / 2)
 
-        self.title.render(title_x, 80)
-        self.btn[0].render(self.mouse_position, button_x, 180)
-        self.btn[1].render(self.mouse_position, button_x, 260)
-        self.btn[2].render(self.mouse_position, button_x, 600)
+        self.btn[0].render(self.mouse_position, self.button_x, 300)
+        self.btn[1].render(self.mouse_position, self.button_x, 380)
+        self.btn[2].render(self.mouse_position, self.button_x, 560)
         py.display.update()
 
     def handle_key_input(self, keys):
@@ -42,26 +40,28 @@ class MainMenu(ScreenBase):
         for event in events:
             if event.type == py.MOUSEBUTTONDOWN:
                 if self.btn[0].is_clicked(self.mouse_position):
-                    self.show_pick_minigame()
+                    self.start_new_game()
                 elif self.btn[1].is_clicked(self.mouse_position):
-                    self.show_options()
+                    self.load_save()
                 elif self.btn[2].is_clicked(self.mouse_position):
                     self.game.quit()
 
     def on_update(self):
         pass
 
-    def show_pick_minigame(self):
-        return
+    def start_new_game(self):
+        from src.game_screens.start_screen.start_screen import StartScreen
+        self.game.drawer.clear()
+        StartScreen(self.game)
 
-    def show_options(self):
+    def load_save(self):
         return
 
 
 class MainMenuButton(Button):
     def __init__(self, screen, text, button_color, button_color_hover, text_color, text_color_hover):
-        text_size = 45
-        button_width = 350
+        text_size = 40
+        button_width = 325
         button_height = 70
         super().__init__(screen, text, button_color, button_color_hover, text_color, text_color_hover, text_size,
                          button_width, button_height)

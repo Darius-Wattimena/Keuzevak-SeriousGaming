@@ -21,6 +21,8 @@ class Game:
         self.FULLSCREEN = False
         self.DEBUG = False
         self.clock = py.time.Clock()
+        self.screen_center_width = None
+        self.screen_center_height = None
 
     def enable_logging(self):
         self.logger = logging.getLogger('scope.name')
@@ -40,6 +42,8 @@ class Game:
     def start(self, py_screen, config):
         """ Start the game. """
         self.py_screen = py_screen
+        self.screen_center_width = py_screen.get_width() / 2
+        self.screen_center_height = py_screen.get_height() / 2
         self.config = config
         self.drawer = Drawer.Instance()
         self.drawer.set_screen(self.py_screen)

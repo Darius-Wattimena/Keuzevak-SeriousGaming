@@ -60,7 +60,9 @@ class StartScreen(ScreenBase):
         MainMenu(self.game)
 
     def character_create(self):
-        pass
+        from src.game_screens.news_screen.news_screen import NewsScreen
+        self.game.drawer.clear()
+        NewsScreen(self.game)
 
 
 class ScreenButton(Button):

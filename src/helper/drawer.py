@@ -20,6 +20,9 @@ class Drawer():
         image = Image(image, rect)
         self.items.append(image)
 
+    def remove_image(self, image):
+        self.items.remove(image)
+
     def add_image(self, name, transparent=False):
         """ Add a new image to the items list """
         data = self.load_image(name, transparent)

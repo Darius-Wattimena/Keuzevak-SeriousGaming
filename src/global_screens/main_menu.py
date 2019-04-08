@@ -18,6 +18,7 @@ class MainMenu(ScreenBase):
         self.btn.append(MainMenuButton(game.py_screen, "Laad spel", btn_base_color, btn_base_color, [255, 255, 255], [200, 200, 200]))
         self.btn.append(MainMenuButton(game.py_screen, "Stoppen", btn_base_color, btn_base_color, [255, 255, 255], [200, 200, 200]))
         self.button_x = self.game.screen_center_width - (self.btn[0].width / 2)
+        #werktdit?
 
     def handle_mouse_position(self, mouse_position):
         self.mouse_position = mouse_position

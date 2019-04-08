@@ -13,12 +13,9 @@ class StartScreen(ScreenBase):
         self.back_button = ScreenButton(game.py_screen, "Terug", [50, 50, 50], [50, 50, 50])
         self.button_x = self.game.screen_center_width - (self.back_button.width / 2)
         text_font = "resources/fonts/helsinki.ttf"
-
         self.name_input = CustomInputField(game.py_screen, TextInput("Henk", text_font), 440, 400, 325, 40, [225, 225, 225])
         self.company_input = CustomInputField(game.py_screen, TextInput("Het nieuws", text_font), 440, 450, 325, 40, [225, 225, 225])
         self.mouse_position = None
-        self.name_input_selected = False
-        self.company_input_selected = False
 
     def on_render(self):
         self.game.drawer.draw_canvas()
@@ -30,10 +27,8 @@ class StartScreen(ScreenBase):
         py.display.update()
 
     def on_events(self, events):
-        if self.name_input_selected:
-            self.name_input.update(events)
-        elif self.company_input_selected:
-            self.company_input.update(events)
+        self.name_input.update(events)
+        self.company_input.update(events)
         for event in events:
             if event.type == py.MOUSEBUTTONDOWN:
                 if self.next_button.is_clicked(self.mouse_position):
@@ -41,12 +36,11 @@ class StartScreen(ScreenBase):
                 elif self.back_button.is_clicked(self.mouse_position):
                     self.back_to_menu()
                 elif self.name_input.is_clicked(self.mouse_position):
-                    self.name_input_selected = True
-                    self.company_input_selected = False
+                    self.name_input.selected = True
+                    self.company_input.selected = False
                 elif self.company_input.is_clicked(self.mouse_position):
-                    self.company_input_selected = True
-                    self.name_input_selected = False
-
+                    self.company_input.selected = True
+                    self.name_input.selected = False
 
     def on_update(self):
         pass
@@ -89,6 +83,7 @@ class CustomInputField:
         self.x = x
         self.y = y
         self.surface = surface
+        self.initialized = False
         self.selected = False
         self.rect = None
 
@@ -97,7 +92,9 @@ class CustomInputField:
         self.surface.blit(self.text_input.get_surface(), (self.x, self.y))
 
     def update(self, events):
-        self.text_input.update(events)
+        if not self.initialized or self.selected:
+            self.text_input.update(events)
+            self.initialized = True
 
     def is_clicked(self, mouse_position):
         if self.rect is not None:

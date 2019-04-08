@@ -2,13 +2,15 @@ from src.helper.screen_base import ScreenBase
 import pygame as py
 
 
-class HomeScreen(ScreenBase):
+class NewsScreen(ScreenBase):
     def __init__(self, game):
         self.game = game
         self.game.set_screen(self)
+        self.mouse_position = None
 
     def on_render(self):
-        return
+        self.game.drawer.draw_canvas()
+        py.display.update()
 
     def on_events(self, events):
         for event in events:

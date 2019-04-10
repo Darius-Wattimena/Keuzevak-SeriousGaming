@@ -2,6 +2,7 @@ from src.game_screens.news_screen.news_items import NewsItems
 from src.helper.button import Button
 from src.helper.label import Label
 from src.helper.screen_base import ScreenBase
+from src.game_config import GameConfig
 import pygame as py
 
 
@@ -23,6 +24,7 @@ class NewsScreen(ScreenBase):
         self.headline_text = Label(game.py_screen, "", [0, 0, 0], 64, font="resources/fonts/helsinki.ttf")
         self.headline_text_x = 25
         self.headline_set = False
+        self.items_count = 0
 
     def on_render(self):
         self.game.drawer.draw_canvas()
@@ -46,6 +48,7 @@ class NewsScreen(ScreenBase):
                     self.current_news_item = self.news_items.get_random_news_item()
                     self.show_news_button.visible = False
                     self.show_news_item = True
+                    self.items_count += 1
                 if self.news_true_button.is_clicked(self.mouse_position) and self.news_buttons_visible:
                     if self.current_news_item.is_fake_news:
                         self.current_news_item.show_result(True)
@@ -65,6 +68,10 @@ class NewsScreen(ScreenBase):
                     self.current_news_item.unload_feedback()
                     self.current_news_item = None
                     self.show_news_button.visible = True
+                    if self.items_count >= GameConfig().items_each_day:
+                        from src.game_screens.end_day_screen.end_day_screen import EndDayScreen
+                        self.game.drawer.clear()
+                        EndDayScreen(self.game)
 
     def on_update(self):
         if self.show_news_item:
@@ -73,7 +80,7 @@ class NewsScreen(ScreenBase):
 
         if self.current_news_item is not None:
             self.headline_text_x -= 2
-            if not self.headline_set:
+            if not self.headline_set and len(self.headline_text.text) < 400:
                 self.headline_text.text = "".join((self.headline_text.text, self.current_news_item.headline))
                 self.headline_set = True
         else:

@@ -1,6 +1,7 @@
 from src.helper.screen_base import ScreenBase
 from src.helper.button import Button
 from src.helper.image_button import ImageButton
+from src.game_config import GameConfig
 import pygame as py
 
 
@@ -84,42 +85,42 @@ class CharacterCreateScreen(ScreenBase):
                     NewsScreen(self.game)
 
                 if self.hair_button_1.is_clicked(self.mouse_position):
-                    self.hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_1.png"
+                    self.hair_global = GameConfig.hair = "resources/graphics/char/female_hairstyles/Female_Haircut_1.png"
                     self.on_render()
                 if self.hair_button_2.is_clicked(self.mouse_position):
-                    self.hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_2.png"
+                    self.hair_global = GameConfig.hair = "resources/graphics/char/female_hairstyles/Female_Haircut_2.png"
                     self.on_render()
                 if self.hair_button_3.is_clicked(self.mouse_position):
-                    self.hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_3.png"
+                    self.hair_global = GameConfig.hair = "resources/graphics/char/female_hairstyles/Female_Haircut_3.png"
                     self.on_render()
                 if self.hair_button_4.is_clicked(self.mouse_position):
-                    self.hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_4.png"
+                    self.hair_global = GameConfig.hair =  "resources/graphics/char/female_hairstyles/Female_Haircut_4.png"
                     self.on_render()
 
                 if self.color_button_1.is_clicked(self.mouse_position):
-                    self.color_global = "resources/graphics/char/female_character/Female_Black.png"
+                    self.color_global = GameConfig.color =  "resources/graphics/char/female_character/Female_Black.png"
                     self.on_render()
                 if self.color_button_2.is_clicked(self.mouse_position):
-                    self.color_global = "resources/graphics/char/female_character/Female_Brown.png"
+                    self.color_global = GameConfig.color =  "resources/graphics/char/female_character/Female_Brown.png"
                     self.on_render()
                 if self.color_button_3.is_clicked(self.mouse_position):
-                    self.color_global = "resources/graphics/char/female_character/Female_Pale.png"
+                    self.color_global = GameConfig.color =  "resources/graphics/char/female_character/Female_Pale.png"
                     self.on_render()
                 if self.color_button_4.is_clicked(self.mouse_position):
-                    self.color_global = "resources/graphics/char/female_character/Female_White.png"
+                    self.color_global = GameConfig.color =  "resources/graphics/char/female_character/Female_White.png"
                     self.on_render()
 
                 if self.clothes_button_1.is_clicked(self.mouse_position):
-                    self.clothes_global = "resources/graphics/char/female_clothes/Female_Clothes_1.png"
+                    self.clothes_global = GameConfig.clothes =  "resources/graphics/char/female_clothes/Female_Clothes_1.png"
                     self.on_render()
                 if self.clothes_button_2.is_clicked(self.mouse_position):
-                    self.clothes_global = "resources/graphics/char/female_clothes/Female_Clothes_2.png"
+                    self.clothes_global = GameConfig.clothes =  "resources/graphics/char/female_clothes/Female_Clothes_2.png"
                     self.on_render()
                 if self.clothes_button_3.is_clicked(self.mouse_position):
-                    self.clothes_global = "resources/graphics/char/female_clothes/Female_Clothes_3.png"
+                    self.clothes_global = GameConfig.clothes =  "resources/graphics/char/female_clothes/Female_Clothes_3.png"
                     self.on_render()
                 if self.clothes_button_4.is_clicked(self.mouse_position):
-                    self.clothes_global = "resources/graphics/char/female_clothes/Female_Clothes_4.png"
+                    self.clothes_global = GameConfig.clothes =  "resources/graphics/char/female_clothes/Female_Clothes_4.png"
                     self.on_render()
 
 

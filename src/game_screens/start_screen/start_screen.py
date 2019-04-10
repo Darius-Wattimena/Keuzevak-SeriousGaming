@@ -66,7 +66,6 @@ class StartScreen(ScreenBase):
         CharacterCreateScreen(self.game)
 
 
-
 class ScreenButton(Button):
     def __init__(self, screen, text, button_color, button_color_hover):
         text_color = [255, 255, 255]

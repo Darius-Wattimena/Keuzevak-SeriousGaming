@@ -28,6 +28,10 @@ class Game:
         self.character_clothes = "resources/graphics/char/female_clothes/Female_Clothes_3.png"
         self.character_hairstyle = "resources/graphics/char/female_hairstyles/Female_Haircut_3.png"
         self.money = 0
+        self.dingengoed = 0
+        self.need_instruction = True
+
+
 
     def get_char(self):
         return [self.character_color, self.character_clothes, self.character_hairstyle]

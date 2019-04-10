@@ -33,20 +33,23 @@ class NewsItem:
         self.image = None
         self.feedback_image = None
 
-    def show_result(self, marked_as_true):
+    def show_result(self, marked_as_true, game):
         if marked_as_true and not self.is_fake_news:
             self.load_correct_feedback()
+            game.dingengoed += 1
         elif marked_as_true and self.is_fake_news:
             self.load_wrong_feedback()
         elif not marked_as_true and not self.is_fake_news:
             self.load_wrong_feedback()
         elif not marked_as_true and self.is_fake_news:
             self.load_correct_feedback()
+            game.dingengoed += 1
 
     def load_correct_feedback(self):
         if not self.feedback_loaded:
             self.feedback_image = self.drawer.add_image(self.correct_result_loc, 0, 0, transparent=True)
             self.feedback_loaded = True
+
 
     def load_wrong_feedback(self):
         if not self.feedback_loaded:

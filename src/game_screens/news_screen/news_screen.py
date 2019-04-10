@@ -56,14 +56,14 @@ class NewsScreen(ScreenBase):
                     self.items_count += 1
                 if self.news_true_button.is_clicked(self.mouse_position) and self.news_buttons_visible:
                     if self.current_news_item.is_fake_news:
-                        self.current_news_item.show_result(True)
+                        self.current_news_item.show_result(True, self.game)
                     self.current_news_item.unload_image()
                     self.news_buttons_visible = False
                     self.dismiss_feedback.visible = True
                     self.show_news_item = False
                 if self.news_false_button.is_clicked(self.mouse_position) and self.news_buttons_visible:
                     if self.current_news_item.is_fake_news:
-                        self.current_news_item.show_result(False)
+                        self.current_news_item.show_result(False, self.game)
                     self.current_news_item.unload_image()
                     self.news_buttons_visible = False
                     self.dismiss_feedback.visible = True
@@ -74,9 +74,9 @@ class NewsScreen(ScreenBase):
                     self.current_news_item = None
                     self.show_news_button.visible = True
                     if self.items_count >= GameConfig().items_each_day:
-                        from src.game_screens.end_day_screen.end_day_screen import EndDayScreen
+                        from src.game_screens.end_day_screen.instruction_display import InstructionDisplay
                         self.game.drawer.clear()
-                        EndDayScreen(self.game)
+                        InstructionDisplay(self.game)
 
     def on_update(self):
         if self.show_news_item:

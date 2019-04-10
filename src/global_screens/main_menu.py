@@ -55,7 +55,10 @@ class MainMenu(ScreenBase):
         StartScreen(self.game)
 
     def load_save(self):
-        return
+        #temp
+        from src.game_screens.end_day_screen.end_day_screen import EndDayScreen
+        self.game.drawer.clear()
+        EndDayScreen(self.game)
 
 
 class MainMenuButton(Button):

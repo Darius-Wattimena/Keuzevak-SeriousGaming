@@ -3,7 +3,7 @@ import pygame as py, logging
 from .helper.drawer import Drawer
 from .helper.singleton import Singleton
 from .global_screens.main_menu import MainMenu
-
+from src.game_state import GameState
 
 @Singleton
 class Game:
@@ -23,6 +23,32 @@ class Game:
         self.clock = py.time.Clock()
         self.screen_center_width = None
         self.screen_center_height = None
+        self.game_state = GameState()
+        self.character_color = "resources/graphics/char/female_character/Female_Pale.png"
+        self.character_clothes = "resources/graphics/char/female_clothes/Female_Clothes_3.png"
+        self.character_hairstyle = "resources/graphics/char/female_hairstyles/Female_Haircut_3.png"
+        self.money = 0
+
+    def get_char(self):
+        return [self.character_color, self.character_clothes, self.character_hairstyle]
+
+    def get_char_clothes(self):
+        return self.character_clothes
+
+    def get_char_color(self):
+        return self.character_color
+
+    def get_char_hair(self):
+        return self.character_hairstyle
+
+    def set_char_hair(self, link):
+        self.character_hairstyle = link
+
+    def set_char_color(self, link):
+        self.character_color = link
+
+    def set_char_clothes(self, link):
+        self.character_clothes = link
 
     def enable_logging(self):
         self.logger = logging.getLogger('scope.name')

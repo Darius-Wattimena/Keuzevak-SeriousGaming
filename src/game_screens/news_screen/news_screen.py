@@ -11,7 +11,12 @@ class NewsScreen(ScreenBase):
         self.game = game
         self.game.set_screen(self)
         self.mouse_position = None
-        self.game.drawer.add_background_image("resources/graphics/Studio.png")
+        self.game.drawer.add_background_image("resources/graphics/Studio_NoChar.png")
+
+        self.logo = game.drawer.add_image( self.game.get_char_color(), 490, 91, 350, 199, True)
+        self.logo = game.drawer.add_image(self.game.get_char_clothes(), 490, 91, 350, 199, True)
+        self.logo = game.drawer.add_image( self.game.get_char_hair(), 490, 91, 350, 199, True)
+
         self.show_news_button = CustomButton(game.py_screen, "Show News", [100, 100, 100], [100, 100, 100])
         self.news_true_button = CustomButton(game.py_screen, "Waar", [29, 226, 72], [29, 226, 72])
         self.news_false_button = CustomButton(game.py_screen, "Niet waar", [216, 86, 86], [216, 86, 86])

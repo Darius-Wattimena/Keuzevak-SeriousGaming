@@ -9,6 +9,7 @@ class CharacterCreateScreen(ScreenBase):
     hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_3.png"
     color_global = "resources/graphics/char/female_character/Female_Pale.png"
     clothes_global = "resources/graphics/char/female_clothes/Female_Clothes_3.png"
+    doorgaan = False
 
     def __init__(self, game):
         self.game = game
@@ -42,42 +43,46 @@ class CharacterCreateScreen(ScreenBase):
         self.mouse_position = None
 
     def on_render(self):
-        self.game.drawer.add_background_image("resources/graphics/char/Character_Customisation_empty_menu.png")
-        self.logo = self.game.drawer.add_image( self.color_global ,
-                                          self.position_x, self.position_y, transparent=True)
-        self.logo = self.game.drawer.add_image(self.hair_global,
-                                          self.position_x, self.position_y, transparent=True)
-        self.logo = self.game.drawer.add_image(self.clothes_global,
-                                          self.position_x, self.position_y, transparent=True)
+        if self.doorgaan == False:
+            self.game.drawer.add_background_image("resources/graphics/char/Character_Customisation_empty_menu.png")
 
-        self.game.drawer.draw_canvas()
-        self.next_button.render(self.mouse_position, 920, 600)
-        self.hair_button_1.render(self.mouse_position, -20, 370)
-        self.hair_button_2.render(self.mouse_position, 70, 370)
-        self.hair_button_3.render(self.mouse_position, 160, 370)
-        self.hair_button_4.render(self.mouse_position, 250, 370)
 
-        self.color_button_1.render(self.mouse_position, -20, 130)
-        self.color_button_2.render(self.mouse_position, 70, 130)
-        self.color_button_3.render(self.mouse_position, 160, 130)
-        self.color_button_4.render(self.mouse_position, 250, 130)
+            self.logo = self.game.drawer.add_image( self.color_global ,
+                                              self.position_x, self.position_y, transparent=True)
+            self.logo = self.game.drawer.add_image(self.hair_global,
+                                              self.position_x, self.position_y, transparent=True)
+            self.logo = self.game.drawer.add_image(self.clothes_global,
+                                              self.position_x, self.position_y, transparent=True)
 
-        self.clothes_button_1.render(self.mouse_position, -20, 550)
-        self.clothes_button_2.render(self.mouse_position, 70, 550)
-        self.clothes_button_3.render(self.mouse_position, 160, 550)
-        self.clothes_button_4.render(self.mouse_position, 250, 550)
+            self.game.drawer.draw_canvas()
 
-        py.display.update()
+            self.next_button.render(self.mouse_position, 920, 600)
+            self.hair_button_1.render(self.mouse_position, -20, 370)
+            self.hair_button_2.render(self.mouse_position, 70, 370)
+            self.hair_button_3.render(self.mouse_position, 160, 370)
+            self.hair_button_4.render(self.mouse_position, 250, 370)
+
+            self.color_button_1.render(self.mouse_position, -20, 130)
+            self.color_button_2.render(self.mouse_position, 70, 130)
+            self.color_button_3.render(self.mouse_position, 160, 130)
+            self.color_button_4.render(self.mouse_position, 250, 130)
+
+            self.clothes_button_1.render(self.mouse_position, -20, 550)
+            self.clothes_button_2.render(self.mouse_position, 70, 550)
+            self.clothes_button_3.render(self.mouse_position, 160, 550)
+            self.clothes_button_4.render(self.mouse_position, 250, 550)
+
+            py.display.update()
 
     def on_events(self, events):
         for event in events:
             if event.type == py.MOUSEBUTTONDOWN:
                 if self.next_button.is_clicked(self.mouse_position):
+                    self.doorgaan = True
                     from src.game_screens.news_screen.news_screen import NewsScreen
                     self.game.drawer.clear()
                     NewsScreen(self.game)
-                #if self.hair_button_1.is_clicked(self.mouse_position):
-                    #quit()
+
                 if self.hair_button_1.is_clicked(self.mouse_position):
                     self.hair_global = "resources/graphics/char/female_hairstyles/Female_Haircut_1.png"
                     self.on_render()

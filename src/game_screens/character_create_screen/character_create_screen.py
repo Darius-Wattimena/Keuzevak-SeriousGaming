@@ -73,7 +73,9 @@ class CharacterCreateScreen(ScreenBase):
         for event in events:
             if event.type == py.MOUSEBUTTONDOWN:
                 if self.next_button.is_clicked(self.mouse_position):
-                    quit()
+                    from src.game_screens.news_screen.news_screen import NewsScreen
+                    self.game.drawer.clear()
+                    NewsScreen(self.game)
                 #if self.hair_button_1.is_clicked(self.mouse_position):
                     #quit()
                 if self.hair_button_1.is_clicked(self.mouse_position):
